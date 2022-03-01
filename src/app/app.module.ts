@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { AppRoutinngModule } from './app-routinng.module';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AppRoutinngModule } from './app-routinng.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutinngModule
+    AppRoutinngModule,
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

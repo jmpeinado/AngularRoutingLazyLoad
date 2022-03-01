@@ -1,20 +1,49 @@
-<h2>Heroes App</h2>
+<h1>Heroes App</h1>
 
-<li>
-    <a routerLink="/heroes/listado">Ir a Listado de heroes</a>
-</li>
-<li>
+<label class="usuario-label">Usuario: {{usuarioName}}</label>
+<button pButton 
+        type="button" 
+        label="Logout" 
+        class="p-button-text p-button-warning btn-logout"
+        (click)="logout()">
+</button>
+
+<button pButton 
+        type="button" 
+        label="Listado" 
+        class="p-button p-button-info mr-1"
+        routerLink="/heroes/listado">
+</button>
+<button pButton 
+        type="button" 
+        label="Agregar" 
+        class="p-button p-button-info mr-1"
+        routerLink="/heroes/agregar">
+</button>
+<button pButton 
+        type="button" 
+        label="Editar" 
+        class="p-button p-button-info mr-1"
+        routerLink="/heroes/editar/26">
+</button>
+<button pButton 
+        type="button" 
+        label="Buscar" 
+        class="p-button p-button-info mr-1"
+        routerLink="/heroes/buscar">
+</button>
+<button pButton 
+        type="button" 
+        label="Ver" 
+        class="p-button p-button-info"
+        routerLink="/heroes/46">
+</button>
+
+    <!-- <a routerLink="/heroes/listado">Ir a Listado de heroes</a>
     <a routerLink="/heroes/agregar">Agregar un heroe</a>
-</li>
-<li>
     <a routerLink="/heroes/editar/26">Editar el heroe 25</a>
-</li>
-<li>
     <a routerLink="/heroes/buscar">Buscar heroes</a>
-</li>
-<li>
-    <a routerLink="/heroes/46">Ver heroe 46</a>
-</li>
+    <a routerLink="/heroes/46">Ver heroe 46</a> -->
 
 
 <router-outlet></router-outlet>
